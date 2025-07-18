@@ -14,7 +14,7 @@
 invisible(sapply(list.files("functions", full.names = T, recursive = T), function(x) source(x, encoding = "UTF-8")))
 options(repos = c(CRAN = "http://cran.rstudio.com/"))
 if (!require(shinydashboard)) {
-    install.packages(c("shinydashboard", "shinydashboardPlus", "shinyBS"))
+    install.packages(c("shinydashboard", "shinydashboardPlus", "shinyBS", "shinymanager"))
     library(shinydashboard)
 }
 load_packages()
