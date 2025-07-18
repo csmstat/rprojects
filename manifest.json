@@ -1189,6 +1189,12 @@
       }
     }
   },
+"dependencies": [
+    {
+      "package": "shinydashboard",
+      "version": "0.7.2"
+    }
+  ],
   "files": {
     "app.R": {
       "checksum": "7c56be90b0f3d27cd6f7ac5a3516bd52"
