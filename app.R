@@ -1592,7 +1592,7 @@ dashboardPage(header, sidebar, body, title = "Monitoraggio PNRR-Giustizia")
 
 # Carica le funzioni e i dati di input.
 invisible(sapply(list.files("functions", full.names = T, recursive = T), function(x) source(x, encoding = "UTF-8")))
-load_packages()
+#load_packages()
 #credentials <- create_credentials()
 load("data/movi_civ.RData")
 load("data/movi_pen.RData")
