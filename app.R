@@ -12,7 +12,10 @@
 # 0. SETUP -------------------------------------------------------------------
 
 invisible(sapply(list.files("functions", full.names = T, recursive = T), function(x) source(x, encoding = "UTF-8")))
-library(shinydashboard)
+if (!require(shinydashboard)) {
+    install.packages("shinydashboard")
+    library(shinydashboard)
+}
 load_packages()
 load("data/sedi.RData")
 distretti <- sedi[, .N, keyby = Distretto][, Distretto]
