@@ -28,7 +28,7 @@ load_packages <- function() {
     #"bslib"
     )
 
-  install.packages(setdiff(packages, rownames(installed.packages())), dependencies = T)
+  #install.packages(setdiff(packages, rownames(installed.packages())), dependencies = T)
   sapply(packages, function(p) library(p, character.only = T))
   
   return(T)
